@@ -11,6 +11,9 @@
         <nuxt-link to="/about" tag="li" class="nav-link">
           <a class="contacts">Contacts</a>
         </nuxt-link>
+        <nuxt-link to="/blog" tag="li" class="nav-link">
+          <a class="blog">Blog</a>
+        </nuxt-link>
       </ul>
     </nav>
   </header>
@@ -26,7 +29,7 @@
 
 ul {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1em;
   align-items: center;
@@ -56,7 +59,16 @@ ul {
 
 .nav-link {
   height: 100%;
+  display: flex;
+  justify-content: center;
 }
+
+.nav-link a:hover,
+.nav-link a:active,
+.nav-link .nuxt-link-exact-active a {
+  color: #06c4d1;
+}
+
 .home {
   grid-column: 1;
 }
@@ -64,6 +76,10 @@ ul {
   grid-column: 1;
 }
 .concerts {
+  grid-column: 1;
+}
+
+.blog {
   grid-column: 1;
 }
 </style>
