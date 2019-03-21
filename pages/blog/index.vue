@@ -1,35 +1,36 @@
 <template>
   <section class="container">
-    <nuxt-link v-for="post in posts" :key="post.id" :to="post.id">
-      <article class="post-preview">
-        <div :style="{backgroundImage: post.thumbnailUrl}" class="post-preview-tumbnail"></div>
-        <div class="post-preview-content">
-          <h1>{{ post.title }}</h1>
-          <p>{{ post.previewText }}</p>
-        </div>
-      </article>
-    </nuxt-link>
+    <PostPreview
+      v-for="post in posts"
+      :key="post.id"
+      :title="post.title"
+      :excerpt="post.previewText"
+      :thumbnailImage="post.thumbnailUrl"
+      :id="post.id"
+    />
   </section>
 </template>
 
 
 <script>
+import PostPreview from '@/components/Blog/PostPreview'
 export default {
+  components: {
+    PostPreview
+  },
   data() {
     return {
       posts: [
         {
-          title: 'A new Begining',
+          title: 'First Concert',
           previewText: 'This will be awesome',
-          thumbnailUrl:
-            'https://images.unsplash.com/photo-1520170975578-25bd5217bf3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+          thumbnailUrl: 'https://i.ytimg.com/vi/iFBztbtrVSA/maxresdefault.jpg',
           id: 'a-new-begining'
         },
         {
-          title: 'A new second Begining',
+          title: 'Second Concert',
           previewText: 'This will be awesome',
-          thumbnailUrl:
-            'https://images.unsplash.com/photo-1520092792133-42473bd8aeab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80',
+          thumbnailUrl: 'https://i.ytimg.com/vi/2S3rvtzDJEc/maxresdefault.jpg',
           id: 'a-second-begining'
         }
       ]
@@ -39,6 +40,20 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
+.container {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media (min-width: 35rem) {
+  .container {
+    flex-direction: row;
+  }
+}
 </style>
+
 
