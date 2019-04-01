@@ -7,11 +7,15 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "Rückwater",
+    title: 'Rückwater',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: "rückwater description"}
+      {
+        hid: 'description',
+        name: 'description',
+        content: 'rückwater description'
+      }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
@@ -42,7 +46,10 @@ export default {
    */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    [
+      'storyblok-nuxt',
+      { accessToken: '9n95QkJScgzs3BitErpfuwtt', cacheProvider: 'memory' }
+    ],
     '@nuxtjs/pwa'
   ],
   /*

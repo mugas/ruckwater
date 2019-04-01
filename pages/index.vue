@@ -33,4 +33,8 @@ img {
   top: 0;
   left: 0;
 }
+
+p {
+  color: red;
+}
 </style>
