@@ -37,6 +37,25 @@ export default {
         }
       })
   }
+
+  /*  data() {
+    return {
+      posts: [
+        {
+          title: 'First Concert',
+          previewText: 'This will be awesome',
+          thumbnailUrl: 'https://i.ytimg.com/vi/iFBztbtrVSA/maxresdefault.jpg',
+          id: 'a-new-begining'
+        },
+        {
+          title: 'Second Concert',
+          previewText: 'This will be awesome',
+          thumbnailUrl: 'https://i.ytimg.com/vi/2S3rvtzDJEc/maxresdefault.jpg',
+          id: 'a-second-begining'
+        }
+      ]
+    }
+  } */
 }
 </script>
 

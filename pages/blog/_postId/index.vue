@@ -1,5 +1,5 @@
 <template>
-  <div id="post">
+  <div id="post" v-editable="blok">
     <div class="post-thumbnail" :style="{backgroundImage: 'url('+ image+ ')'}"></div>
     <section class="post-content">
       <h1>{{ title }}</h1>
@@ -13,16 +13,23 @@ export default {
   asyncData(context) {
     return context.app.$storyapi
       .get('cdn/stories/blog/' + context.params.postId, {
-        version: 'draft'
+        version: process.env.NODE_ENV == 'production' ? 'published' : 'draft'
       })
       .then(res => {
         console.log(res.data)
         return {
+          blok: res.data.story.content,
           title: res.data.story.content.title,
           image: res.data.story.content.thumbnail,
           content: res.data.story.content.content
         }
       })
+  },
+  mounted() {
+    console.log(this)
+    this.$storybridge.on('change', () => {
+      location.reload(true)
+    })
   }
 }
 </script>

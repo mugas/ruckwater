@@ -65,7 +65,7 @@ ul {
 
 .nav-link a:hover,
 .nav-link a:active,
-.nav-link .nuxt-link-exact-active a {
+.nav-link .nuxt-link-active a {
   color: #06c4d1;
 }
 

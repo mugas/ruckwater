@@ -1,4 +1,5 @@
 import pkg from './package'
+import axios from 'axios'
 
 export default {
   mode: 'universal',
@@ -48,10 +49,30 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     [
       'storyblok-nuxt',
-      { accessToken: '9n95QkJScgzs3BitErpfuwtt', cacheProvider: 'memory' }
-    ],
-    '@nuxtjs/pwa'
+      {
+        accessToken:
+          process.env.NODE_ENV == 'production'
+            ? 'QZrtkZjyy8M4HvNizjFSAgtt'
+            : '9n95QkJScgzs3BitErpfuwtt',
+        cacheProvider: 'memory'
+      }
+    ]
+    // '@nuxtjs/pwa'
   ],
+
+  generate: {
+    routes: function() {
+      return axios
+        .get(
+          'https://api.story.com/v1/cdn/stories?version=published&token=QZrtkZjyy8M4HvNizjFSAgtt&starts_with=blog&cv=' +
+            Math.floor(Date.now() / 1e3)
+        )
+        .then(res => {
+          const blogPosts = res.data.stories.map(bp => bp.full_slug)
+          return ['/', '/blog', '/about', ...blogPosts]
+        })
+    }
+  },
   /*
    ** Axios module configuration
    */
