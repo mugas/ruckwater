@@ -8,7 +8,7 @@
         <nuxt-link to="/about" tag="li" class="nav-link">
           <a class="concerts">Concerts</a>
         </nuxt-link>
-        <nuxt-link to="/about" tag="li" class="nav-link">
+        <nuxt-link to="/tour" tag="li" class="nav-link">
           <a class="contacts">Contacts</a>
         </nuxt-link>
         <nuxt-link to="/blog" tag="li" class="nav-link">

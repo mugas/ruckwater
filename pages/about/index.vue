@@ -1,7 +1,7 @@
 <template>
   <section id="about-page" v-editable="blok">
     <h1>{{ title }}</h1>
-    <p>{{ content }}r</p>
+    <p>{{ content }}</p>
   </section>
 </template>
 

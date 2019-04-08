@@ -64,12 +64,12 @@ export default {
     routes: function() {
       return axios
         .get(
-          'https://api.story.com/v1/cdn/stories?version=published&token=QZrtkZjyy8M4HvNizjFSAgtt&starts_with=blog&cv=' +
+          'https://api.storyblok.com/v1/cdn/stories?version=published&token=QZrtkZjyy8M4HvNizjFSAgtt&starts_with=blog&cv=' +
             Math.floor(Date.now() / 1e3)
         )
         .then(res => {
           const blogPosts = res.data.stories.map(bp => bp.full_slug)
-          return ['/', '/blog', '/about', ...blogPosts]
+          return ['/', '/blog', '/about', '/blogmain', ...blogPosts]
         })
     }
   },

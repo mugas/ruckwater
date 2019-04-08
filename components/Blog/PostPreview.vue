@@ -58,7 +58,7 @@ a {
 .post-preview-content {
   text-align: center;
   padding: 1rem;
-  color: red;
+  color: green;
 }
 
 @media (min-width: 35rem) {
