@@ -1,13 +1,27 @@
 <template>
-  <section id="tour" v-editable="blok">
-    <p>{{ date }}</p>
+  <section id="tour">
+    <Tour
+      v-for="tour in tours"
+      :key="tour.id"
+      :date="tour.date"
+      :city="tour.city"
+      :country="tour.country"
+      :venue="tour.venue"
+      :id="tour.id"
+    />
+
+    <!-- <p>{{ date }}</p>
     <p>{{ city }}</p>
-    <p>{{ venue }}</p>
+    <p>{{ venue }}</p>-->
   </section>
 </template>
 
 <script>
+import Tour from '@/components/Tour/Tour'
 export default {
+  components: {
+    Tour
+  },
   asyncData(context) {
     return context.app.$storyapi
       .get('cdn/stories/tour', {
@@ -15,12 +29,12 @@ export default {
       })
       .then(res => {
         console.log(res.data)
-        return {
+        /*  return {
           blok: res.data.story.content,
           date: res.data.story.content.Date,
           city: res.data.story.content.City,
           venue: res.data.story.content.Venue
-        }
+        } */
       })
   },
   mounter() {

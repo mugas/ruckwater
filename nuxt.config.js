@@ -69,7 +69,7 @@ export default {
         )
         .then(res => {
           const blogPosts = res.data.stories.map(bp => bp.full_slug)
-          return ['/', '/blog', '/about', '/blogmain', ...blogPosts]
+          return ['/', '/blog', '/about', '/blogmain', '/tour', ...blogPosts]
         })
     }
   },
