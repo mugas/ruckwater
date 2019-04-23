@@ -1,10 +1,20 @@
-<template></template>
+<template>
+  <nuxt-link :to="id">
+    <article class="tour-preview">
+      <div class="tour-preview-content">
+        <h1>{{ country }}</h1>
+        <p>{{ city }}</p>
+        <p>{{ date }}</p>
+      </div>
+    </article>
+  </nuxt-link>
+</template>
 
 
 <script>
 export default {
   props: {
-    date: {
+    country: {
       type: String,
       required: true
     },
@@ -12,11 +22,7 @@ export default {
       type: String,
       required: true
     },
-    country: {
-      type: String,
-      required: true
-    },
-    venue: {
+    date: {
       type: String,
       required: true
     },
@@ -27,3 +33,16 @@ export default {
   }
 }
 </script>
+
+
+
+
+<style scoped>
+h1 {
+  color: red;
+}
+
+p {
+  color: blue;
+}
+</style>
