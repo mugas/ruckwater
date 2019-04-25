@@ -1,13 +1,14 @@
 <template>
-  <nuxt-link :to="id">
-    <article class="tour-preview">
+  
+    <article :to="id" class="tour-preview">
       <div class="tour-preview-content">
         <h1>{{ country }}</h1>
         <p>{{ city }}</p>
         <p>{{ date }}</p>
+        <p>{{ venue }}</p>
       </div>
     </article>
-  </nuxt-link>
+  
 </template>
 
 
@@ -25,6 +26,10 @@ export default {
     date: {
       type: String,
       required: true
+    },
+    venue:{
+      type:String,
+      required:true
     },
     id: {
       type: String,

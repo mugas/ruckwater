@@ -3,9 +3,10 @@
     <Tour
       v-for="tour in tours"
       :key="tour.id"
-      :country="tour.title"
+      :country="tour.country"
       :city="tour.city"
       :date="tour.date"
+      :venue="tour.venue"
       :id="tour.id"
     />
   </section>
@@ -22,10 +23,24 @@ export default {
       .get('cdn/stories', {
         version: 'draft',
         starts_with: 'tour/'
+       
       })
       .then(res => {
+       // console.log(res)
         console.log(res)
-        return res
+        return { 
+          sort_by:res.data.stories.venue,
+          tours: res.data.stories.map(tr => {
+          return{
+            id:tr.slug,
+            country:tr.content.country,
+            city:tr.content.city,
+            date:tr.content.date,
+            venue:tr.content.venue
+          }
+        }),
+       
+        }
       })
   }
 }
