@@ -22,24 +22,23 @@ export default {
     return context.app.$storyapi
       .get('cdn/stories', {
         version: 'draft',
-        starts_with: 'tour/'
-       
+        starts_with: 'tour/',
+        sort_by: 'content.date:asc'
       })
       .then(res => {
-       // console.log(res)
+        // console.log(res)
         console.log(res)
-        return { 
-          sort_by:res.data.stories.venue,
+        return {
+          // sort_by:res.data.stories.venue,
           tours: res.data.stories.map(tr => {
-          return{
-            id:tr.slug,
-            country:tr.content.country,
-            city:tr.content.city,
-            date:tr.content.date,
-            venue:tr.content.venue
-          }
-        }),
-       
+            return {
+              id: tr.slug,
+              country: tr.content.country,
+              city: tr.content.city,
+              date: tr.content.date,
+              venue: tr.content.venue
+            }
+          })
         }
       })
   }

@@ -6,10 +6,10 @@
           <a class="home">Home</a>
         </nuxt-link>
         <nuxt-link to="/about" tag="li" class="nav-link">
-          <a class="concerts">Concerts</a>
+          <a class="concerts">About Us</a>
         </nuxt-link>
         <nuxt-link to="/tour" tag="li" class="nav-link">
-          <a class="contacts">Contacts</a>
+          <a class="contacts">Tour</a>
         </nuxt-link>
         <nuxt-link to="/blog" tag="li" class="nav-link">
           <a class="blog">Blog</a>
