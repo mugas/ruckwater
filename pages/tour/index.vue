@@ -1,5 +1,15 @@
 <template>
   <section class="container">
+    <!-- <table>
+      <thead>
+        <tr>
+          <td>Date</td>
+          <td>City</td>
+          <td>Country</td>
+          <td>Venue</td>
+        </tr>
+      </thead>
+    </table>-->
     <Tour
       v-for="tour in tours"
       :key="tour.id"
@@ -49,6 +59,13 @@ export default {
 
 
 <style scoped>
+td {
+  width: 4rem;
+  height: 2rem;
+  border: 1px solid #ccc;
+  text-align: center;
+  color: red;
+}
 #tour p {
   white-space: pre-line;
   color: red;
@@ -58,6 +75,10 @@ export default {
   width: 80%;
   max-width: 300px;
   margin: auto;
+}
+
+.teste {
+  color: red;
 }
 </style>
 

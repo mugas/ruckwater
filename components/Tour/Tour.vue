@@ -1,11 +1,12 @@
 <template>
   <article :to="id" class="tour-preview">
-    <div class="tour-preview-content">
-      <h1>{{ country }}</h1>
-      <p>{{ city }}</p>
-      <p>{{ date }}</p>
-      <p>{{ venue }}</p>
+    <div class="date">{{ date }}</div>
+    <div class="city">
+      {{ city }} ,
+      <br>
+      {{ venue }}
     </div>
+    <div class="country">{{ country }}</div>
   </article>
 </template>
 
@@ -38,19 +39,26 @@ export default {
 </script>
 
 
+div{
 
+}
 
 <style scoped>
-table {
-  border-spacing: 0.5rem;
+.tour-preview {
+  margin-bottom: 32px;
+}
+article {
+  columns: 3;
 }
 
-td,
-th {
-  border: 1px solid #999;
-  padding: 0.5rem;
+.date {
+  color: blue;
 }
-td {
+.city {
+  color: blue;
+}
+
+.country {
   color: blue;
 }
 </style>
