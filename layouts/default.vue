@@ -23,8 +23,8 @@ export default {
 
 body {
   font-family: 'Lato', sans-serif;
-  background: black;
   margin: 0;
+  background: black;
 }
 
 .main-content {

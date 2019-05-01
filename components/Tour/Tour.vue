@@ -1,4 +1,4 @@
-<template>
+  <template>
   <article :to="id" class="tour-preview">
     <div class="date">{{ date }}</div>
     <div class="city">
@@ -39,14 +39,15 @@ export default {
 </script>
 
 
-div{
 
-}
 
 <style scoped>
 .tour-preview {
   margin-bottom: 32px;
+  font-family: 'Merienda', cursive;
+  border-bottom: 2px yellow solid;
 }
+
 article {
   columns: 3;
 }

@@ -1,15 +1,5 @@
 <template>
   <section class="container">
-    <!-- <table>
-      <thead>
-        <tr>
-          <td>Date</td>
-          <td>City</td>
-          <td>Country</td>
-          <td>Venue</td>
-        </tr>
-      </thead>
-    </table>-->
     <Tour
       v-for="tour in tours"
       :key="tour.id"
@@ -24,6 +14,7 @@
 
 <script>
 import Tour from '@/components/Tour/Tour'
+
 export default {
   components: {
     Tour
@@ -59,6 +50,9 @@ export default {
 
 
 <style scoped>
+body {
+  background-color: blue;
+}
 td {
   width: 4rem;
   height: 2rem;
