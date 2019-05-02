@@ -35,9 +35,12 @@ export default {
   max-width: 300px;
   margin: auto;
 }
+h1 {
+  color: #857d6b;
+}
 
 #about-page p {
   white-space: pre-line;
-  color: green;
+  color: #6f4d2a;
 }
 </style>

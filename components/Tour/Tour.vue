@@ -2,8 +2,7 @@
   <article :to="id" class="tour-preview">
     <div class="date">{{ date }}</div>
     <div class="city">
-      {{ city }} ,
-      <br>
+      {{ city }},
       {{ venue }}
     </div>
     <div class="country">{{ country }}</div>
@@ -45,21 +44,28 @@ export default {
 .tour-preview {
   margin-bottom: 32px;
   font-family: 'Merienda', cursive;
-  border-bottom: 2px yellow solid;
+  border-bottom: 2px #6f4d2a solid;
+  padding-bottom: 10px;
 }
 
 article {
   columns: 3;
 }
+div {
+  box-sizing: border-box;
+}
 
 .date {
-  color: blue;
+  color: #857d6b;
+  text-align: center;
 }
 .city {
-  color: blue;
+  color: #857d6b;
+  text-align: center;
 }
 
 .country {
-  color: blue;
+  color: #857d6b;
+  text-align: center;
 }
 </style>

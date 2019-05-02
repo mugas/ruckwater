@@ -23,7 +23,7 @@ export default {
       {
         rel: 'stylesheet',
         href:
-          '<link href="https://fonts.googleapis.com/css?family=Lato:400|Merienda:400,700" rel="stylesheet">'
+          'https://fonts.googleapis.com/css?family=Lato:400|Merienda:400,700'
       }
     ]
   },

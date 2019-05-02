@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <ImageHeader/>
     <Tour
       v-for="tour in tours"
       :key="tour.id"
@@ -14,10 +15,12 @@
 
 <script>
 import Tour from '@/components/Tour/Tour'
+import ImageHeader from '@/components/ImageHeader/ImageHeader'
 
 export default {
   components: {
-    Tour
+    Tour,
+    ImageHeader
   },
   asyncData(context) {
     return context.app.$storyapi
