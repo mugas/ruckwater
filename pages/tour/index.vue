@@ -52,32 +52,7 @@ export default {
 
 
 
-<style scoped>
-body {
-  background-color: blue;
-}
-td {
-  width: 4rem;
-  height: 2rem;
-  border: 1px solid #ccc;
-  text-align: center;
-  color: red;
-}
-#tour p {
-  white-space: pre-line;
-  color: red;
-}
 
-#tour {
-  width: 80%;
-  max-width: 300px;
-  margin: auto;
-}
-
-.teste {
-  color: red;
-}
-</style>
 
 
 

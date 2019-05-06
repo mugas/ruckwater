@@ -36,6 +36,7 @@ export default {
 
 <style>
 .post-thumbnail {
+  font-family: 'Merienda', cursive;
   width: 100%;
   height: 300px;
   background-size: cover;

@@ -1,6 +1,6 @@
 <template>
   <nuxt-link :to="'/blog/' + id" class="post-preview">
-    <article>
+    <article class="thumbnail-preview">
       <div :style="{backgroundImage: 'url(' + thumbnailImage + ')'}" class="post-preview-tumbnail"></div>
       <div class="post-preview-content">
         <h1>{{ title }}</h1>
@@ -34,9 +34,12 @@ export default {
 </script>
 
 <style scoped>
+.thumbnail-preview {
+  font-family: 'Merienda', cursive;
+}
 a {
   text-decoration: none;
-  color: black;
+  color: #857d6b;
 }
 
 .post-preview {
@@ -58,9 +61,11 @@ a {
 .post-preview-content {
   text-align: center;
   padding: 1rem;
-  color: green;
+  color: #6f4d2a;
 }
-
+p {
+  font-family: 'Courier New', Courier, monospace;
+}
 @media (min-width: 35rem) {
   .post-preview {
     width: 25rem;

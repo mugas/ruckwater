@@ -6,10 +6,10 @@
           <a class="home">Home</a>
         </nuxt-link>
         <nuxt-link to="/about" tag="li" class="nav-link">
-          <a class="concerts">About Us</a>
+          <a class="band">Band</a>
         </nuxt-link>
         <nuxt-link to="/tour" tag="li" class="nav-link">
-          <a class="contacts">Tour</a>
+          <a class="tour">Tour</a>
         </nuxt-link>
         <nuxt-link to="/blog" tag="li" class="nav-link">
           <a class="blog">Blog</a>
@@ -21,6 +21,7 @@
 
 <style scoped>
 .main-header {
+  font-family: 'Merienda', cursive;
   top: 0;
   left: 0;
   width: 100%;
@@ -54,11 +55,11 @@ ul {
 .nav-link a {
   display: block;
   text-decoration: none;
-  color: yellow;
+  color: #858585;
 }
 
 .nav-link {
-  height: 100%;
+  height: 50%;
   display: flex;
   justify-content: center;
 }
@@ -66,7 +67,7 @@ ul {
 .nav-link a:hover,
 .nav-link a:active,
 .nav-link .nuxt-link-active a {
-  color: #06c4d1;
+  color: #6f4d2a;
 }
 
 .home {

@@ -3,7 +3,7 @@
     <div class="date">{{ date }}</div>
     <div class="city">
       {{ city }},
-      {{ venue }}
+      <span class="highlight">{{ venue }}</span>
     </div>
     <div class="country">{{ country }}</div>
   </article>
@@ -67,5 +67,9 @@ div {
 .country {
   color: #857d6b;
   text-align: center;
+}
+
+.highlight {
+  color: #ff8000;
 }
 </style>
