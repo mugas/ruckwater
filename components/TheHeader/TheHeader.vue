@@ -5,6 +5,9 @@
         <nuxt-link to="/" tag="li" class="nav-link">
           <a class="home">Home</a>
         </nuxt-link>
+        <nuxt-link to="/discography" tag="li" class="nav-link">
+          <a class="discography">Discography</a>
+        </nuxt-link>
         <nuxt-link to="/about" tag="li" class="nav-link">
           <a class="band">Band</a>
         </nuxt-link>
@@ -30,7 +33,7 @@
 
 ul {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-auto-rows: auto;
   grid-gap: 1em;
   align-items: center;
