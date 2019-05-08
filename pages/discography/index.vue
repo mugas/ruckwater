@@ -4,7 +4,7 @@
       v-for="discography in discographies"
       :key="discography.id"
       :title="discography.title"
-      :releaseYear="discography.year"
+      :year="discography.year"
       :thumbnailImage="discography.image"
       :id="discography.id"
     />
@@ -28,8 +28,7 @@ export default {
         console.log(res)
 
         return {
-          discography: res.data.stories.map(ds => {
-            console.log(ds.content.title)
+          discographies: res.data.stories.map(ds => {
             return {
               id: ds.slug,
               title: ds.content.title,
@@ -52,7 +51,6 @@ export default {
   align-items: center;
   flex-direction: column;
   height: 100%;
-  background: white;
 }
 
 @media (min-width: 35rem) {
