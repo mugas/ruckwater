@@ -67,7 +67,8 @@ h1 {
 }
 p {
   font-family: 'Merienda', cursive;
-  color: #ff8000;
+  font-weight: bold;
+  color: #6f4d2a;
   text-align: center;
 }
 

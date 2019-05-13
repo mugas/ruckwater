@@ -8,7 +8,7 @@
         <nuxt-link to="/discography" tag="li" class="nav-link">
           <a class="discography">Discography</a>
         </nuxt-link>
-        <nuxt-link to="/about" tag="li" class="nav-link">
+        <nuxt-link to="/band" tag="li" class="nav-link">
           <a class="band">Band</a>
         </nuxt-link>
         <nuxt-link to="/tour" tag="li" class="nav-link">
