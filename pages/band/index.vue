@@ -30,7 +30,7 @@ body {
 
 .make {
   grid-area: make;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   height: 20rem;
@@ -39,7 +39,7 @@ body {
 
 .jape {
   grid-area: jape;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   height: 20rem;
@@ -48,7 +48,7 @@ body {
 
 .jussi {
   grid-area: jussi;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center center;
   height: 20rem;

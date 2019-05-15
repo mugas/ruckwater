@@ -45,8 +45,7 @@ export default {
 <style scoped>
 .container {
   font-family: 'Merienda', cursive;
-  padding-top: 2rem;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   flex-direction: column;
