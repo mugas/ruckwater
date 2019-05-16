@@ -1,5 +1,6 @@
 <template>
   <section class="container">
+    <SocialMedia/>
     <Discography
       v-for="discography in discographies"
       :key="discography.id"
@@ -13,10 +14,12 @@
 
 <script>
 import Discography from '@/components/Discography/Discography'
+import SocialMedia from '@/components/SocialMedia/SocialMedia'
 
 export default {
   components: {
-    Discography
+    Discography,
+    SocialMedia
   },
   asyncData(context) {
     return context.app.$storyapi
