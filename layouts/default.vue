@@ -4,14 +4,18 @@
     <main class="main-content">
       <nuxt/>
     </main>
+    <SocialMedia/>
   </div>
 </template>
 
 <script>
 import TheHeader from '@/components/TheHeader/TheHeader'
+import SocialMedia from '@/components/SocialMedia/SocialMedia'
+
 export default {
   components: {
-    TheHeader: TheHeader
+    TheHeader: TheHeader,
+    SocialMedia
   }
 }
 </script>

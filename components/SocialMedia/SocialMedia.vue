@@ -2,13 +2,19 @@
   <div class="wrapper">
     <ul>
       <li class="facebook">
-        <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        <a href="https://www.facebook.com/ruckwater/" target="_blank">
+          <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
       </li>
       <li class="twitter">
-        <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        <a href="https://twitter.com/ruckwater" target="_blank">
+          <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </a>
       </li>
       <li class="instagram">
-        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        <a href="https://www.instagram.com/ruckwater/?hl=pt" target="_blank">
+          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
       </li>
     </ul>
   </div>
@@ -24,11 +30,16 @@
 /* Let's style the wrapper in such away that, 
 it should always be at the center of the browser */
 .wrapper {
-  position: absolute;
+  /*  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 550px;
+  width: 550px; */
+  height: 70px;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
 }
 
 /* Style the Un-order list by setting its list-style to none */
@@ -46,16 +57,14 @@ it should always be at the center of the browser */
   margin: 0 10px;
   text-align: center;
   cursor: pointer;
-  border-radius: 50%;
-  border: 5px solid #d8e2dc;
-  float: left;
+  display: inline-block;
   transition: all 0.5s ease;
 }
 
 /* Style the icons by setting its color and margin-top value to 20px 
 to align it properly */
 .wrapper ul li .fa {
-  color: #d8e2dc;
+  color: #858585;
   margin-top: 20px;
   transition: all 0.5s ease;
 }
@@ -63,11 +72,6 @@ to align it properly */
 /* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
   to icons for glowing effect and use transition property for smooth transition effect. */
 /*facebook*/
-.wrapper ul li:hover.facebook {
-  border: 5px solid #3b5998;
-  box-shadow: 0 0 15px #3b5998;
-  transition: all 0.5s ease;
-}
 
 .wrapper ul li:hover .fa-facebook {
   color: #3b5998;
@@ -76,11 +80,6 @@ to align it properly */
 }
 
 /*twitter*/
-.wrapper ul li:hover.twitter {
-  border: 5px solid #00aced;
-  box-shadow: 0 0 15px #00aced;
-  transition: all 0.5s ease;
-}
 
 .wrapper ul li:hover .fa-twitter {
   color: #00aced;
@@ -89,41 +88,10 @@ to align it properly */
 }
 
 /* instagram */
-.wrapper ul li:hover.instagram {
-  border: 5px solid #bc2a8d;
-  box-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
 
 .wrapper ul li:hover .fa-instagram {
   color: #bc2a8d;
   text-shadow: 0 0 15px #bc2a8d;
-  transition: all 0.5s ease;
-}
-
-/* google */
-.wrapper ul li:hover.google {
-  border: 5px solid #dd4b39;
-  box-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-google {
-  color: #dd4b39;
-  text-shadow: 0 0 15px #dd4b39;
-  transition: all 0.5s ease;
-}
-
-/* whatsapp */
-.wrapper ul li:hover.whatsapp {
-  border: 5px solid #4dc247;
-  box-shadow: 0 0 15px #4dc247;
-  transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover .fa-whatsapp {
-  color: #4dc247;
-  text-shadow: 0 0 15px #4dc247;
   transition: all 0.5s ease;
 }
 

@@ -1,9 +1,8 @@
 <template>
-  <section class="container">
-    <div>
-      <h1 class="title">ruckwater</h1>
+  <section>
+    <div class="container">
       <img class="image" src="@/assets/ruckwater.jpg">
-      <h2 class="subtitle">band website</h2>
+      <h1 class="title">ruckwater</h1>
     </div>
   </section>
 </template>
@@ -15,9 +14,24 @@ export default {
 </script>
 
 <style scoped>
-h1 {
-  color: red;
+.container {
+  position: relative;
   text-align: center;
+  color: white;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1 {
+  color: whitesmoke;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 8.6rem;
 }
 
 img {
@@ -36,5 +50,11 @@ img {
 
 p {
   color: red;
+}
+
+@media (max-width: 26.25rem) {
+  h1 {
+    font-size: 3.6rem;
+  }
 }
 </style>
