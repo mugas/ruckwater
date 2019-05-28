@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container" v-editable="blok">
     <Discography
       v-for="discography in discographies"
       :key="discography.id"
@@ -30,6 +30,7 @@ export default {
         return {
           discographies: res.data.stories.map(ds => {
             return {
+              blok: res.data.story.content,
               id: ds.slug,
               title: ds.content.title,
               year: ds.content.year,
@@ -38,6 +39,12 @@ export default {
           })
         }
       })
+  },
+  mounted() {
+    console.log(this)
+    this.$storybridge.on('change', () => {
+      location.reload(true)
+    })
   }
 }
 </script>

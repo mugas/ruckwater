@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <img class="image" src="@/assets/ruckwater.jpg">
-      <h1 class="title">ruckwater</h1>
+      <h1 class="title">rückwater</h1>
     </div>
   </section>
 </template>
@@ -17,17 +17,18 @@ export default {
 .container {
   position: relative;
   text-align: center;
-  color: white;
 }
 
 .title {
   position: absolute;
+  font-family: lato;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 h1 {
-  color: whitesmoke;
+  color: white;
+  letter-spacing: 0.1em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
@@ -46,10 +47,6 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-}
-
-p {
-  color: red;
 }
 
 @media (max-width: 26.25rem) {

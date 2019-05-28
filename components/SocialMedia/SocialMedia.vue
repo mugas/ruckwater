@@ -74,7 +74,7 @@ to align it properly */
 /*facebook*/
 
 .wrapper ul li:hover .fa-facebook {
-  color: #3b5998;
+  color: #6f4d2a;
   text-shadow: 0 0 15px #3b5998;
   transition: all 0.5s ease;
 }
@@ -82,7 +82,7 @@ to align it properly */
 /*twitter*/
 
 .wrapper ul li:hover .fa-twitter {
-  color: #00aced;
+  color: #6f4d2a;
   text-shadow: 0 0 15px #00aced;
   transition: all 0.5s ease;
 }
@@ -90,7 +90,7 @@ to align it properly */
 /* instagram */
 
 .wrapper ul li:hover .fa-instagram {
-  color: #bc2a8d;
+  color: #6f4d2a;
   text-shadow: 0 0 15px #bc2a8d;
   transition: all 0.5s ease;
 }
