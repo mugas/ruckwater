@@ -1,5 +1,5 @@
 <template>
-  <section class="container" v-editable="blok">
+  <section class="container">
     <Discography
       v-for="discography in discographies"
       :key="discography.id"
@@ -21,7 +21,7 @@ export default {
   asyncData(context) {
     return context.app.$storyapi
       .get('cdn/stories', {
-        version: 'draft',
+        version: context.isDev ? 'draft' : 'published',
         starts_with: 'discography/'
       })
       .then(res => {
@@ -30,7 +30,6 @@ export default {
         return {
           discographies: res.data.stories.map(ds => {
             return {
-              blok: res.data.story.content,
               id: ds.slug,
               title: ds.content.title,
               year: ds.content.year,
@@ -39,13 +38,13 @@ export default {
           })
         }
       })
-  },
-  mounted() {
+  }
+  /*  mounted() {
     console.log(this)
     this.$storybridge.on('change', () => {
       location.reload(true)
     })
-  }
+  } */
 }
 </script>
 

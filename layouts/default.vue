@@ -15,7 +15,7 @@ import SocialMedia from '@/components/SocialMedia/SocialMedia'
 export default {
   components: {
     TheHeader: TheHeader,
-    SocialMedia
+    SocialMedia: SocialMedia
   }
 }
 </script>
