@@ -49,7 +49,11 @@ export default {
 }
 
 article {
-  columns: 3;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill);
+  /* columns: 3; */
 }
 div {
   box-sizing: border-box;

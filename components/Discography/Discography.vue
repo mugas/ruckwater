@@ -72,9 +72,9 @@ p {
   text-align: center;
 }
 
-@media (min-width: 35rem) {
-  .post-preview {
-    width: 25rem;
+@media (max-width: 26.25rem) {
+  .image {
+    height: 10rem;
   }
 }
 </style>

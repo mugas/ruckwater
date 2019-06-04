@@ -1,4 +1,4 @@
-<template>
+  <template>
   <div class="wrapper">
     <ul>
       <li class="facebook">
@@ -64,7 +64,7 @@ it should always be at the center of the browser */
 /* Style the icons by setting its color and margin-top value to 20px 
 to align it properly */
 .wrapper ul li .fa {
-  color: #858585;
+  color: #6f4d2a;
   margin-top: 20px;
   transition: all 0.5s ease;
 }

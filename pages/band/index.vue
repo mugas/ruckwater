@@ -54,4 +54,12 @@ body {
   height: 20rem;
   background-image: url(https://cdn1.imggmi.com/uploads/2019/5/14/b992742fda41747d60758e70ef36e60a-full.jpg);
 }
+
+@media (max-width: 26.25rem) {
+  .jape,
+  .jussi,
+  .make {
+    height: 10rem;
+  }
+}
 </style>
