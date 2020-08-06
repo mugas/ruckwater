@@ -1,10 +1,6 @@
 [![Social banner for mugas](./assets/ruckwater_banner.png)](http://ricardomoreira.io/)
 
-<<<<<<< HEAD
 <h1 align="center"> 🔥Ruckwater🔥</h1>
-=======
-> band website made with Nuxt and Storyblook. 
->>>>>>> b4cfd83563a383d5308773eab6d7892bb956a2ee
 
 <h2 align="center"> A website for a music group made with Nuxt </h2>
 
@@ -26,6 +22,7 @@
 Ruckwater
 
 <<<<<<< HEAD
+
 #### Links 🔗
 
 [Website](https://cranky-lichterman-91ec08.netlify.app/)
