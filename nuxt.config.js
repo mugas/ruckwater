@@ -78,7 +78,8 @@ export default {
           }
         ]
       }
-    ]
+    ],
+    'nuxt-netlify-cms'
   ],
 
   generate: {
