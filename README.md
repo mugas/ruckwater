@@ -6,38 +6,36 @@
 
 ### Index
 
-* [Name](####Name) 👈
-* [Links](####Links) 🔗
-* [Description](####Description) 📖
+* [Name](#Name) 👈
+* [Links](#Links) 🔗
+* [Description](#Description) 📖
 * [Languages and Frameworks](####Languages-and-Frameworks) ⚙️
-* [Screenshots](####Screenshots) 📱
-* [Instalation](####Instalation) 🧩
-* [Support](####Support) 🆘
-* [Roadmap](####Roadmap) 🗺️
+* [Screenshots](#Screenshots) 📱
+* [Instalation](#Instalation) 🧩
+* [Support](#Support) 🆘
+* [Roadmap](#Roadmap) 🗺️
 * [Authors and acknowledgment](####Authors-and-acknowledgment) ✍️
-* [Project Status](####Project-Status) 📜
+* [Project Status](#Project-Status) 📜
 
-#### Name 👈
+# Name
 
 Ruckwater
 
-<<<<<<< HEAD
-
-#### Links 🔗
+# Links
 
 [Website](https://cranky-lichterman-91ec08.netlify.app/)
 
 [Presentation](https://www.ricardomoreira.io/projects/2020-06-02-nuxt-website/)
 ___
 
-#### Description 📖
+# Description
 
 My first real approach to Nuxt and headless CMS.
 It's built with Storyblok as CMS and with Nuxt. It includes a blog, a tour page and a discography all stored with Storyblok.
 
 ___
 
-#### Languages, Frameworks and others ⚙️
+# Languages, Frameworks and others
 
 * **Nuxt.js** - Framework
 * **Storyblok** - Headless CMS
@@ -46,18 +44,19 @@ ___
 
 ____
 
-#### Screenshots 📱
+# Screenshots
 
-![Social banner for mugas](./assets/screenshot.png)
-![Social banner for mugas](./assets/screenshot1.png)
+Home Page         |  Blog Page
+:-------------------------:|:-------------------------:
+![](assets/screenshot.png)  |  ![](assets/screenshot1.png)
 
 ____
 
-#### Instalation 🧩
+# Instalation
 
 ___
 
-#### Support 🆘
+# Support
 
 Have any question or find something that doesn't look good? Let's talk 😊
 
@@ -67,13 +66,13 @@ Have any question or find something that doesn't look good? Let's talk 😊
 
 ____
 
-#### Roadmap 🗺️
+# Roadmap
 
 For now the page is done, But it will improved in the future. No features yet decided to be added
 
 ____
 
-#### Authors-and-acknowledgment ✍️
+# Authors-and-acknowledgment
 
 * [Based on this](https://www.youtube.com/watch?v=Dc_5BpIB4X4)
 
@@ -81,11 +80,8 @@ ____
 
 ____
 
-#### Project-Status 📜
+# Project-Status  
 
 Done. It will be improved in the future with more features.
 
 ____
-=======
-
->>>>>>> b4cfd83563a383d5308773eab6d7892bb956a2ee
