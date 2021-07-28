@@ -2,7 +2,7 @@
   <section>
     <div class="container">
       <img class="image" src="@/assets/ruckwater.jpg">
-      <h1 class="title">rückwater</h1>
+      <h1 class="title">rückwaters</h1>
       <SocialMedia/>
     </div>
   </section>
